@@ -1,0 +1,145 @@
+/* Reset and global styles */
+/* Reset and global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    /* Make the body take up full viewport height */
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Make the container take up full viewport height */
+    padding: 20px;
+}
+
+/* Product image styles */
+.product_imgs {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product_imgs .img {
+    height: 100%;
+    /* Make the image container take up full height of parent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_imgs .img img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed container width */
+    max-height: 100%;
+    /* Ensure the image doesn't exceed container height */
+    object-fit: contain;
+}
+
+/* Product information styles */
+.product_about {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    /* Make the product info div take up full height of parent */
+    overflow-y: auto;
+    /* Add scrollbar if content exceeds height */
+}
+
+
+.product_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product_less_price {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    color: #009688;
+}
+
+.amazon_mrp {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.flipkart_mrp {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.mrp {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.product_rating {
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #f2b01e;
+    /* Star color */
+}
+
+.product_aboutphone {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Product buy section styles */
+.produt_buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amazon_pro,
+.flipkart_pro {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 100px;
+    /* Adjust size of logos */
+    height: 50px;
+    /* Adjust size of logos */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-bottom: 10px;
+}
+
+.logoImg {
+    height: 50px;
+    width: 100px;
+}
+
+.btn button {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #00796b;
+}

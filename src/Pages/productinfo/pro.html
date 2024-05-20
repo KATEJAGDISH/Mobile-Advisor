@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Define your styles here */
+        .container {
+            text-align: center;
+        }
+
+        .product_imgs ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product_imgs ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .product_imgs ul li button {
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product_imgs">
+            <ul>
+                <!-- Each button has an onclick event that calls the changeImage function -->
+                <li><button onclick="changeImage('image1.jpg')">im1</button></li>
+                <li><button onclick="changeImage('image2.jpg')">Image 2</button></li>
+                <li><button onclick="changeImage('image3.jpg')">Image 3</button></li>
+                <li><button onclick="changeImage('image4.jpg')">Image 4</button></li>
+            </ul>
+            <!-- Image container -->
+            <div class="img">
+                <img id="mainImage" src="" alt="Main Image">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to change the main image
+        function changeImage(imageSrc) {
+            // Get the main image element
+            var mainImage = document.getElementById('mainImage');
+            // Change the src attribute to the new image source
+            mainImage.src = imageSrc;
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className={StyleStyles.produt_buy}>
+    <div className={StyleStyles.amazon_pro}>
+        <div className={StyleStyles.logo}> logo </div>
+        <div className={StyleStyles.product_price}>
+            <div className={StyleStyles.amazon_price}>Amazon Price: {product.amazonPrice}</div>
+            <div className={StyleStyles.amazon_mrp}>MRP: {product.amazonMRP}</div>
+        </div>
+        <div className={StyleStyles.btn}>
+            <button>Buy on Amazon</button>
+        </div>
+    </div>
+    <div className={StyleStyles.flipkart_pro}>
+        <div className={StyleStyles.logo}>logo</div>
+        <div className={StyleStyles.product_price}>
+            <div className={StyleStyles.flipkart_price}>Flipkart Price:{product.price}</div>
+            <div className={StyleStyles.flipkart_mrp}>MRP: {product.mrp}</div>
+        </div>
+        <div className={StyleStyles.btn}>
+            <button><a href={product.product_url}> Buy on Flipkart</a></button>
+        </div>
+
+    </div>
+</div>
